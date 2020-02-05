@@ -134,6 +134,9 @@ html,
 body {
   height: 100%;
 }
+* {
+  font-family: 'Oswald', sans-serif;
+}
 h1,
 p,
 li {
