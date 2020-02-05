@@ -134,6 +134,14 @@ html,
 body {
   height: 100%;
 }
+h1,
+p,
+li {
+  color: #706c61;
+}
+a {
+  color: #e1f4f3;
+}
 Html {
   background-color: #333333;
 }
@@ -157,14 +165,33 @@ nav a {
 }
 .intro-box {
   display: flex;
-  flex-direction: column;
   background-color: #ffffff;
   width: 80%;
   margin: 2% auto;
+  flex-wrap: wrap;
+}
+.intro-box figure {
+  width: 50%;
+  margin-left: 1%;
 }
 .intro-box h1 {
   font-size: 2rem;
   text-align: center;
+  width: 100%;
+}
+.intro-box div {
+  width: 40%;
+  margin: auto;
+  flex-direction: column;
+}
+.intro-box div p {
+  font-size: 2.5rem;
+  background: #333333;
+}
+.intro-box div a {
+  padding: 0;
+  font-size: 1.5rem;
+  width: 35%;
 }
 .intro-box img {
   width: 50%;
@@ -173,19 +200,20 @@ nav a {
   font-size: 0.5rem;
 }
 .intro-box p {
-  margin: 2%;
+  margin: 0;
+  height: 100%;
 }
 .intro-box a {
+  background: #301934;
   border: 1px solid #e1f4f3;
-  width: 15%;
-  color: #333333;
-  background: #e1f4f3;
-  padding: 1%;
-  margin-left: 2%;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.1rem;
 }
 .about h2 {
   font-size: 1.4rem;
   margin-bottom: 1%;
+  color: #706c61;
 }
 .about div {
   flex-direction: column;
@@ -196,6 +224,8 @@ nav a {
   border-bottom: 1px solid #706c61;
 }
 .work-history {
+  padding: 3%;
+  margin-bottom: 1%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -203,7 +233,18 @@ nav a {
   font-size: 1.6rem;
   color: #706c61;
   width: 100%;
+  margin-bottom: 1%;
 }
 .work-history table {
   justify-content: flex-start;
+}
+.work-history table .titles {
+  font-weight: bolder;
+}
+.work-history table td {
+  border-bottom: 1px solid #706c61;
+}
+.copyright {
+  text-align: center;
+  color: #e1f4f3;
 }
