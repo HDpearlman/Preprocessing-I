@@ -134,3 +134,76 @@ html,
 body {
   height: 100%;
 }
+Html {
+  background-color: #333333;
+}
+div {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  background-color: #ffffff;
+}
+nav {
+  display: flex;
+  justify-content: center;
+}
+nav a {
+  color: #e1f4f3;
+  font-weight: 400;
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+.intro-box {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 80%;
+  margin: 2% auto;
+}
+.intro-box h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+.intro-box img {
+  width: 50%;
+}
+.intro-box .subtitle {
+  font-size: 0.5rem;
+}
+.intro-box p {
+  margin: 2%;
+}
+.intro-box a {
+  border: 1px solid #e1f4f3;
+  width: 15%;
+  color: #333333;
+  background: #e1f4f3;
+  padding: 1%;
+  margin-left: 2%;
+}
+.about h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1%;
+}
+.about div {
+  flex-direction: column;
+  width: 50%;
+  margin: 3%;
+}
+.about li {
+  border-bottom: 1px solid #706c61;
+}
+.work-history {
+  display: flex;
+  flex-wrap: wrap;
+}
+.work-history h2 {
+  font-size: 1.6rem;
+  color: #706c61;
+  width: 100%;
+}
+.work-history table {
+  justify-content: flex-start;
+}
