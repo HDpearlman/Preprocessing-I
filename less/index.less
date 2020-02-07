@@ -57,3 +57,164 @@ html, body {
     height: 100%;
 }
 
+
+
+// we'll start our LESS here
+
+*{
+	font-family: 'Oswald', sans-serif;
+}
+//variables
+@link-color:#e1f4f3;
+@background-color:#333333;
+@box-color:#ffffff;
+@text-color:#706c61;
+@link-backround:#301934;
+h1, p ,li{
+	color:@text-color;
+}
+a{
+	color:@link-color
+}
+Html{
+	background-color:@background-color;
+}
+div {
+	display:flex;
+	justify-content:space-between;
+	width:80%;
+	margin:auto;
+	background-color: @box-color;
+}
+
+nav{
+	display:flex;
+	justify-content: center;
+	a{
+		color:@link-color;
+		font-weight:400;
+		font-size:1.6rem;
+		padding:.5rem;
+		text-decoration:none;
+	}
+}
+
+.intro-box{
+	display:flex;
+	// flex-direction:column;
+	background-color: @box-color;
+	width:80%;
+	margin:2% auto;
+	flex-wrap:wrap;
+	
+	figure{
+		width:50%;
+		margin-left:1%;
+		@media (max-width: 1000px){
+			display:none;
+		}
+	}
+	h1{
+		font-size:2rem;
+		text-align:center;
+		width:100%;
+		
+	}
+	div{
+		width:40%;
+		margin:auto;
+		flex-direction:column;
+		p{
+			font-size:2.5rem;
+			background:@background-color;
+			@media (max-width:1000px){
+				font-size:1.5rem;
+			}
+			
+		}
+		a{
+			// display:block;
+			padding:0;
+			font-size:1.5rem;
+			width:35%;
+		}
+	}
+	img{
+		width:50%;
+	}
+	.subtitle{
+		font-size:.5rem;
+	}
+	p{
+		margin:0;
+		height:100%;
+	}
+	// a{
+	// 	border: 1px solid #e1f4f3;
+	// 	width:15%;
+	// 	color:#333333;
+	// 	background:#e1f4f3;
+	// 	padding:1%;
+	// 	margin-left:2%;
+	// }
+	a{
+		background:@link-backround;
+		border: 1px solid @link-color;
+		text-decoration:none;
+		font-weight:bold;
+		padding:.1rem;
+	}
+}
+
+.about{
+	@media(max-width:550px){
+		flex-direction:column;
+		div{
+			margin:auto;
+		}
+	}
+	h2{
+		font-size:1.4rem;
+		margin-bottom: 1%;
+		color: @text-color;
+
+	}
+	div{
+		flex-direction:column;
+		width:50%;
+		margin:3%;
+		
+	}
+	li{
+		border-bottom: 1px solid @text-color;
+	
+	}
+
+}
+
+.work-history{
+	padding:3%;
+	margin-bottom:1%;
+	display:flex;
+	flex-wrap:wrap;
+	h2{
+		font-size:1.6rem;
+		color:@text-color;
+		width:100%;
+		margin-bottom:1%;
+	}
+	table{
+		justify-content:flex-start;
+		.titles{
+			font-weight:bolder;
+		}
+		td{
+			border-bottom: 1px solid @text-color;
+		}
+	}
+}
+
+.copyright{
+	text-align: center;
+	color:@link-color
+}
